@@ -4,7 +4,7 @@ import { defineConfig } from 'astro/config';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://mirko93.github.io',
-  base: './dist',
+  base: '/',
   output: "static",
   devToolbar: {
     enabled: false
