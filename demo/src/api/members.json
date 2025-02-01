@@ -1,0 +1,37 @@
+[
+    {
+      "name": "Test Test",
+      "position": "igrač",
+      "image": "src/images/blank-profile-picture.png"
+    },
+    {
+      "name": "Test Test",
+      "position": "igrač",
+      "image": "src/images/blank-profile-picture.png"
+    },
+    {
+      "name": "Test Test",
+      "position": "igrač",
+      "image": "src/images/blank-profile-picture.png"
+    },
+    {
+      "name": "Test Test",
+      "position": "igrač",
+      "image": "src/images/blank-profile-picture.png"
+    },
+    {
+      "name": "Test Test",
+      "position": "igrač",
+      "image": "src/images/blank-profile-picture.png"
+    },
+    {
+        "name": "Test Test",
+        "position": "igrač",
+        "image": "src/images/blank-profile-picture.png"
+    },
+    {
+        "name": "Test Test",
+        "position": "igrač",
+        "image": "src/images/blank-profile-picture.png"
+    }
+]
