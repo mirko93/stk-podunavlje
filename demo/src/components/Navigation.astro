@@ -1,0 +1,44 @@
+---
+import navigations from "../api/navigations.json";
+
+---
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      logo
+      <!-- <img
+        src="src/assets/ttimage_1.svg"
+        width="70"
+        height="70"
+        loading="eager"
+        alt="logo"
+      /> -->
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        {navigations.map((item: any, index: number) => (
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href={item.link}>{item.tab_name}</a>
+          </li>
+        ))}
+      </ul>
+    </div>
+    <div class="right-top">
+      <ul class="d-flex align-items-center">
+        <li>
+          <button
+            type="button"
+            class="btn bar-btn-links"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRightmobile"
+          >
+            <span>
+              <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs> <style>.c{fill:##000000;}</style> </defs> <g id="a"></g> <g id="b"> <rect class="c" height="4" rx=".5" ry=".5" width="4" x="2" y="18"></rect> <rect class="c" height="4" rx=".5" ry=".5" width="4" x="2" y="2"></rect> <rect class="c" height="4" rx=".5" ry=".5" width="4" x="2" y="10"></rect> <rect class="c" height="4" rx=".5" ry=".5" width="4" x="18" y="18"></rect> <rect class="c" height="4" rx=".5" ry=".5" width="4" x="18" y="2"></rect> <rect class="c" height="4" rx=".5" ry=".5" width="4" x="18" y="10"></rect> <rect class="c" height="4" rx=".5" ry=".5" width="4" x="10" y="18"></rect> <rect class="c" height="4" rx=".5" ry=".5" width="4" x="10" y="2"></rect> <rect class="c" height="4" rx=".5" ry=".5" width="4" x="10" y="10"></rect> </g> </g></svg>
+            </span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
