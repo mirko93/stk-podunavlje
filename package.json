@@ -1,0 +1,21 @@
+{
+  "name": "stk-podunavlje",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@fancyapps/ui": "^5.0.36",
+    "astro": "^5.2.1",
+    "astro-icon": "^1.1.5",
+    "bootstrap": "^5.3.3",
+    "swiper": "^11.2.1"
+  },
+  "devDependencies": {
+    "sass-embedded": "^1.83.4"
+  }
+}

@@ -1,0 +1,66 @@
+---
+import 'swiper/css';
+import members from "../api/members.json";
+
+---
+<div class="news-sectiondiv d-inline-block w-100">
+    <div class="container swiper">
+      <div class="mindle-heading text-center">
+        <h5>Ekipa na okupu</h5>
+        <h1>Upoznajte <span> članove </span></h1>
+      </div>
+      <span class="bgi-text light-tsext01">Članovi</span>
+
+      <div class="team-member mt-5 swiper-wrapper">
+
+        {members.map((member:any, index: number) => (
+          <div class="member-profile swiper-slide">
+            <img src={member.image} loading="lazy" alt="teams01" />
+            <div class="design">
+              <h5>{member.name}</h5>
+              <p>{member.position}</p>
+            </div>
+          </div>
+        ))}
+        
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+  <script>
+	import { Swiper } from "swiper";
+  import { Navigation, Pagination, Autoplay } from "swiper/modules";
+
+  const mainCarousel = new Swiper(".swiper", {
+        modules: [Navigation, Pagination, Autoplay],
+        slidesPerView: 1,
+        autoplay: {
+          delay: 1000
+        },
+        speed: 4000,
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        breakpoints: {
+            100: {
+                slidesPerView: 2,
+                spaceBetween: "3%",
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: "3%",
+            },
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: "3%"
+            },
+        },
+    });
+	
+  </script>
